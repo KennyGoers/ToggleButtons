@@ -44,6 +44,9 @@
         <attr name="textOn" format="string" />
         <!-- The text for the button when it is not checked. -->
         <attr name="textOff" format="string" />
+        <!-- Use for backward compatibility (pre-Android 5) for vector images, using android:button
+         on a pre-Android 5 device with a vector image will cause an exception to be thrown by the constructor -->
+        <attr name="buttonCompat" format="reference"/>
     </declare-styleable>
 
     <attr name="toggleGroupStyle" format="reference"/>
